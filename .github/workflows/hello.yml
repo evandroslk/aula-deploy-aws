@@ -1,14 +1,15 @@
 name: HelloWorld
 
 on:
-	push:
-		branches:
-		    - 'trunk'
+  push:
+    branches:
+      - 'main'
 jobs:
-	build:
-		runs-on: ubuntu-latest
-		
-		steps:
-		  	- name: Printing Hello World
-		      run: echo "Hello World!"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Printing Hello World
+        run: echo "Hello World!"
+
 			
